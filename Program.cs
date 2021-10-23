@@ -12,12 +12,11 @@ namespace ProjectOne
             int K = 0;
             Stack pTri = new Stack();
             string nLine = " " ;
-            
+            int E = N;
             for (int i = N; i > 0-1 ; i--)
             {
                 K = 0;
                 nLine = " ";
-
             for (int x= 0; x < N+1; x++)
                 {
                     int a = 0;           
@@ -26,39 +25,25 @@ namespace ProjectOne
                     a = a + 1;
                 }
                 string nLinet;
-                nLinet = format(N) + nLine;
+                nLinet = format(N, E) + nLine;
                 pTri.Push(nLinet);
                 N = N - 1;
             }
 
             foreach (var stackItem in pTri)
             {
-                            
                 Console.WriteLine(stackItem);
-                
-                
             }
             Console.ReadLine();
         }
-        public static string format(int indent)
+        public static string format(int indent, int N)
         {
-            switch (indent)
+            string tab= " ";
+            for(int i = indent ; i < N+1  ; i++)
             {
-                case 0:
-                    return "     ";
-                case 1:
-                    return "    ";
-                case 2:
-                    return "   ";
-                case 3:
-                    return "  ";
-                case 4:
-                    return " ";
-                case 5:
-                    return " ";
-
+                tab = tab + " ";
             }
-            return "\t";
+            return tab;
         }
     
         public static int binomial(in int N, in int K)
