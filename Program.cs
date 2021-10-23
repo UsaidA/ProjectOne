@@ -4,7 +4,7 @@ namespace ProjectOne
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             Console.WriteLine("N: ");
             int N = Convert.ToInt32(Console.ReadLine());
@@ -12,15 +12,18 @@ namespace ProjectOne
             int K = Convert.ToInt32(Console.ReadLine());
 
 
-            for (int i = N; i == 0; i--)
+            for (int i = N; i > 0; i--)
             {
-                format();
+               // format();
                 for(int x= 0; x < (N+2); x++)
                 {
                     Console.WriteLine(binomial(N, K));
+
                     Console.ReadLine();
+                    K = K + 1;
                 }
             }
+            
         }
         public static void format()
         {
