@@ -12,7 +12,7 @@ namespace ProjectOne
             int K = Convert.ToInt32(Console.ReadLine());
 
 
-            for (int i = N; i > 0; i--)
+            for (int i = N; i > 0-1 ; i--)
             {
                // format();
                 for(int x= 0; x < (N+2); x++)
@@ -33,7 +33,7 @@ namespace ProjectOne
         public static int binomial(in int N, in int K)
         {
             int expOne, expTwo, expThree, B;
-            if ((N !> 0))
+            if (!(N < 0))
             {
                 if ((K > -1) && (K < (N + 1)))
                 {
