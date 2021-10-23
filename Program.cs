@@ -12,16 +12,19 @@ namespace ProjectOne
             int K = 0;
 
 
-            //for (int i = N; i > 0 ; i--)
-            //{
-            // format();
+            for (int i = N; i > 0-1 ; i--)
+            {
+                K = 0;
 
             for (int x= 0; x < N+1; x++)
                 {
-                    Console.Write(binomial(N, K) );
+                Console.Write(binomial(N, K));
+                Console.Write(" ");
                     K = K + 1;
                 }
-           // }
+                N = N - 1;
+            }
+
             Console.ReadLine();
         }
         public static void format()
