@@ -18,14 +18,18 @@ namespace ProjectOne
 
             for (int x= 0; x < N+1; x++)
                 {
-                Console.Write(binomial(N, K));
-                Console.Write(" ");
+                    Console.Write(binomial(N, K));
+                    Console.Write(" ");
                     K = K + 1;
                 }
+                pTri.Push(Console.ReadLine());
                 N = N - 1;
             }
-
-            Console.ReadLine();
+            foreach (var stackItem in pTri)
+            {
+                Console.WriteLine(stackItem);
+            }
+            //Console.ReadLine();
         }
         public static void format()
         {
