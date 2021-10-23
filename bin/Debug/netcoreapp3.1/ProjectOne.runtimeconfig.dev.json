@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Potatoes\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Potatoes\\.nuget\\packages"
+    ]
+  }
+}
