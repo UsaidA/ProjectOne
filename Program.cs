@@ -15,6 +15,7 @@ namespace ProjectOne
             for (int i = N; i > 0-1 ; i--)
             {
                // format();
+               
                 for(int x= 0; x < (N+2); x++)
                 {
                     Console.WriteLine(binomial(N, K));
@@ -33,6 +34,18 @@ namespace ProjectOne
         public static int binomial(in int N, in int K)
         {
             int expOne, expTwo, expThree, B;
+            if (K == 0)
+            {
+                return 1;
+            }
+            else if (K == 1)
+            {
+                return N;
+            }
+            else if (K == N)
+            {
+                return 1;
+            }
             if (!(N < 0))
             {
                 if ((K > -1) && (K < (N + 1)))
