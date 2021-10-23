@@ -12,7 +12,11 @@ namespace ProjectOne
             int K = 0;
             Stack pTri = new Stack();
             string nLine = " " ;
-            int E = N;
+            int E = N; // E is for format function
+            string spaceToUse = space(N);
+
+            
+
             for (int i = N; i > 0-1 ; i--)
             {
                 K = 0;
@@ -20,7 +24,7 @@ namespace ProjectOne
             for (int x= 0; x < N+1; x++)
                 {
                     int a = 0;           
-                    nLine += Convert.ToString((binomial(N, K) + " "));
+                    nLine += Convert.ToString( (binomial(N, K) + spaceToUse)  );
                     K = K + 1;
                     a = a + 1;
                 }
@@ -36,12 +40,30 @@ namespace ProjectOne
             }
             Console.ReadLine();
         }
+        public static string space(int N)
+        {
+            string space = "";
+            if (N < 5)
+            {
+                space = " ";
+            }
+            else if ((N < 10) && (N > 4))
+            {
+                space = " ";
+            }
+
+
+            return space;
+
+
+
+        }
         public static string format(int indent, int N)
         {
-            string tab= " ";
+            string tab= "";
             for(int i = indent ; i < N+1  ; i++)
             {
-                tab = tab + " ";
+                tab = tab + space(N);
             }
             return tab;
         }
