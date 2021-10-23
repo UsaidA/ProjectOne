@@ -11,25 +11,29 @@ namespace ProjectOne
             int N = Convert.ToInt32(Console.ReadLine());
             int K = 0;
             Stack pTri = new Stack();
-
+            string nLine = " " ;
+            
             for (int i = N; i > 0-1 ; i--)
             {
                 K = 0;
+                nLine = " ";
 
             for (int x= 0; x < N+1; x++)
                 {
-                    Console.Write(binomial(N, K));
-                    Console.Write(" ");
+                    int a = 0;           
+                    nLine += Convert.ToString((binomial(N, K) + " "));
                     K = K + 1;
+                    a = a + 1;
                 }
-                pTri.Push(Console.ReadLine());
+                pTri.Push(nLine);
                 N = N - 1;
             }
+
             foreach (var stackItem in pTri)
             {
                 Console.WriteLine(stackItem);
             }
-            //Console.ReadLine();
+            Console.ReadLine();
         }
         public static void format()
         {
