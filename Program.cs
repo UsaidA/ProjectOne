@@ -8,23 +8,21 @@ namespace ProjectOne
         {
             Console.WriteLine("N: ");
             int N = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("K: ");
-            int K = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("K: ");
+            int K = 0;
 
 
-            for (int i = N; i > 0-1 ; i--)
-            {
-               // format();
-               
-                for(int x= 0; x < (N+2); x++)
+            //for (int i = N; i > 0 ; i--)
+            //{
+            // format();
+
+            for (int x= 0; x < N+1; x++)
                 {
                     Console.WriteLine(binomial(N, K));
-
-                    Console.ReadLine();
                     K = K + 1;
                 }
-            }
-            
+           // }
+            Console.ReadLine();
         }
         public static void format()
         {
