@@ -18,7 +18,7 @@ namespace ProjectOne
 
             for (int x= 0; x < N+1; x++)
                 {
-                    Console.WriteLine(binomial(N, K));
+                    Console.Write(binomial(N, K) );
                     K = K + 1;
                 }
            // }
