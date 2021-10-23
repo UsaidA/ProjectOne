@@ -10,10 +10,23 @@ namespace ProjectOne
             int N = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("K: ");
             int K = Convert.ToInt32(Console.ReadLine());
-            
-            Console.WriteLine(binomial(N,K));
-            Console.ReadLine();
+
+
+            for (int i = N; i == 0; i--)
+            {
+                format();
+                for(int x= 0; x < (N+2); x++)
+                {
+                    Console.WriteLine(binomial(N, K));
+                    Console.ReadLine();
+                }
+            }
         }
+        public static void format()
+        {
+            int f = 2;
+        }
+    
         public static int binomial(in int N, in int K)
         {
             int expOne, expTwo, expThree, B;
