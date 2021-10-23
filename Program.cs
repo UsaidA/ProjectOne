@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace ProjectOne
 {
@@ -8,9 +9,8 @@ namespace ProjectOne
         {
             Console.WriteLine("N: ");
             int N = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("K: ");
             int K = 0;
-
+            Stack pTri = new Stack();
 
             for (int i = N; i > 0-1 ; i--)
             {
