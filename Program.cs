@@ -6,8 +6,12 @@ namespace ProjectOne
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("N: ");
+            int N = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("K: ");
+            int K = Convert.ToInt32(Console.ReadLine());
             
-            Console.WriteLine(binomial(8,4));
+            Console.WriteLine(binomial(N,K));
             Console.ReadLine();
         }
         public static int binomial(in int N, in int K)
