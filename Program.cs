@@ -25,19 +25,40 @@ namespace ProjectOne
                     K = K + 1;
                     a = a + 1;
                 }
-                pTri.Push(nLine);
+                string nLinet;
+                nLinet = format(N) + nLine;
+                pTri.Push(nLinet);
                 N = N - 1;
             }
 
             foreach (var stackItem in pTri)
             {
+                            
                 Console.WriteLine(stackItem);
+                
+                
             }
             Console.ReadLine();
         }
-        public static void format()
+        public static string format(int indent)
         {
-            int f = 2;
+            switch (indent)
+            {
+                case 0:
+                    return "     ";
+                case 1:
+                    return "    ";
+                case 2:
+                    return "   ";
+                case 3:
+                    return "  ";
+                case 4:
+                    return " ";
+                case 5:
+                    return " ";
+
+            }
+            return "\t";
         }
     
         public static int binomial(in int N, in int K)
