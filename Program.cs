@@ -23,10 +23,10 @@ namespace ProjectOne
                 nLine = "";
             for (int x= 0; x < N+1; x++)
                 {
-                    int a = 0;           
+                              
                     nLine += Convert.ToString( (binomial(N, K) + spaceToUse)  );
                     K = K + 1;
-                    a = a + 1;
+                    
                 }
                 string nLinet;
                 nLinet = format(N, E) + nLine;
