@@ -20,7 +20,7 @@ namespace ProjectOne
             for (int i = N; i > 0-1 ; i--)
             {
                 K = 0;
-                nLine = " ";
+                nLine = "";
             for (int x= 0; x < N+1; x++)
                 {
                     int a = 0;           
@@ -49,7 +49,7 @@ namespace ProjectOne
             }
             else if ((N < 10) && (N > 4))
             {
-                space = " ";
+                space = "  ";
             }
 
 
@@ -63,7 +63,7 @@ namespace ProjectOne
             string tab= "";
             for(int i = indent ; i < N+1  ; i++)
             {
-                tab = tab + space(N);
+                tab = tab + " ";
             }
             return tab;
         }
